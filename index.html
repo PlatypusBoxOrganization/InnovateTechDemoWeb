@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovateTech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>InnovateTech</h1>
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            </div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to InnovateTech</h2>
+            <p>Leading the way in technological innovation and solutions.</p>
+            <img src="tech.jpeg" alt="Innovative Technology" style="height: 350px;">
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At InnovateTech, we are committed to developing cutting-edge technology solutions that drive business growth and efficiency. With a team of experienced professionals, we bring innovative ideas to life.</p>
+            <img src="https://picsum.photos/800/400?office" alt="About Us">
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Software Development</h3>
+                    <p>Custom software solutions tailored to your business needs.</p>
+                </div>
+                <div class="card">
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable cloud infrastructure to support your growing business.</p>
+                </div>
+                <div class="card">
+                    <h3>AI & Machine Learning</h3>
+                    <p>Integrate AI to enhance decision-making and automate processes.</p>
+                </div>
+                <div class="card">
+                    <h3>Cybersecurity</h3>
+                    <p>Protect your digital assets with our advanced security services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <p>"InnovateTech's solutions transformed our business operations and boosted our efficiency. Their team is highly skilled and professional." - Client A</p>
+            <p>"The cloud solutions provided by InnovateTech are robust and scalable, perfectly supporting our needs as we grow." - Client B</p>
+        </div>
+    </section>
+    <section id="team">
+        <div class="container">
+            <h2>Our Team</h2>
+            <p>Meet the experts driving innovation at InnovateTech:</p>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="https://picsum.photos/200?person" alt="Team Member 1">
+                    <h3>Jane Doe</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://picsum.photos/200?person" alt="Team Member 2">
+                    <h3>John Smith</h3>
+                    <p>Chief Technology Officer</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://picsum.photos/200?person" alt="Team Member 3">
+                    <h3>Sarah Johnson</h3>
+                    <p>Head of AI Research</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 InnovateTech. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            if (navLinks.style.display === 'block') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
